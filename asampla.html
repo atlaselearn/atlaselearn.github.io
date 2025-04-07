@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Container for the slider */
+    .slider-container {
+      width: 80%; /* Set the width of the container */
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Wrapper for images */
+    .slider-wrapper {
+     
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    /* Each image inside the slider */
+    .slider-item {
+      width:100%; /* Each image takes up half of the screen width, two images at a time */
+      display: inline-block;
+      padding: 10px;
+    }
+
+    .slider-item img {
+      width: 100%; /* Make the image fill the container */
+      height: 300px; /* Fixed height for all images */
+      object-fit: cover; /* Ensures the images maintain aspect ratio */
+      border-radius: 10px;
+    }
+
+    /* Navigation buttons */
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            min-width: 25%; /* 4 images visible at a time */
+            box-sizing: border-box;
+            padding: 5px;
+            display: flex;
+            justify-content: center; /* Center images within each slide */
+            align-items: center;
+        }
+
+        .auto-style1 {
+	  border-width: 0px;
+  }
+  </style>
+</head>
+<body>
+
+<div class="slider-container">
+  <div class="slider-wrapper">
+    <div class="slider-item">
+      <img src="download%20(19).jfif" alt="Home page">
+    </div>
+    <div class="slider-item">
+      <img src="download%20(17).jfif" alt="E-learning">
+    </div>
+    <div class="slider-item">
+      <img src="download%20(20).jfif" alt="Results">
+    </div>
+    <div class="slider-item">
+      <img src="download%20(18).jfif" alt="Stakeholders">
+    </div>
+  </div>
+  <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
+<script>
+  // JavaScript for the sliding effect
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+  const sliderWrapper = document.querySelector('.slider-wrapper');
+  let currentIndex = 0;
+
+  // Total number of slides (in terms of image pairs)
+  const totalSlides = document.querySelectorAll('.slider-item').length / 2;
+
+  // Show the previous set of images (pair)
+  function showPrev() {
+    if (currentIndex === 0) {
+      currentIndex = totalSlides - 1; // Go back to the last pair of images
+    } else {
+      currentIndex--;
+    }
+    updateSliderPosition();
+  }
+
+  // Show the next set of images (pair)
+  function showNext() {
+    if (currentIndex === totalSlides - 1) {
+      currentIndex = 0; // Go back to the first pair of images
+    } else {
+      currentIndex++;
+    }
+    updateSliderPosition();
+  }
+
+  // Update the slider position to show the correct set of images
+  function updateSliderPosition() {
+    sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  prevButton.addEventListener('click', showPrev);
+  nextButton.addEventListener('click', showNext);
+
+  // Optional: Auto-slide every 5 seconds
+  setInterval(showNext, 5000);
+</script>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+
+<div1 class="slider-container">
+        <!-- Slider that holds all the images -->
+        <div class="slider" id="slider">
+            <div class="slide"><a href="CHE%20Course%20Selection.html">
+				<img src="download%20(4).jfif" alt="Image 1" style="width: 100%; /* Ensure the image fills its container */ height: 250px; /* Fixed height for all images */ object-fit: cover; /* Ensures the image covers the area without distortion */ border-radius: 10px;" /></a></div>
+         
+				  <div class="slide"><a href="biology_course_selection.html">
+				<img src="download%206.jfif" alt="Image 12" style="width: 100%; /* Ensure the image fills its container */ height: 250px; /* Fixed height for all images */ object-fit: cover; /* Ensures the image covers the area without distortion */ border-radius: 10px;" /></a></div>
+            <div class="slide"><a href="phy%20Course%20Selection.html">
+				<img src="download%20(7).jfif" alt="Image 4" style="width: 100%; /* Ensure the image fills its container */ height: 250px; /* Fixed height for all images */ object-fit: cover; /* Ensures the image covers the area without distortion */ border-radius: 10px;" /></a></div>
+				    <div class="slide"><a href="geo%20Course%20Selection.html">
+				<img src="images%20(3).jfif" alt="Image 13" style="width: 100%; /* Ensure the image fills its container */ height: 250px; /* Fixed height for all images */ object-fit: cover; /* Ensures the image covers the area without distortion */ border-radius: 10px;" /></a></div>
+				 <div class="slide"><a href="HIST%20Course%20Selection.html">
+				<img src="download%20(6).jfif" alt="Image 3" style="width: 100%; /* Ensure the image fills its container */ height: 250px; /* Fixed height for all images */ object-fit: cover; /* Ensures the image covers the area without distortion */ border-radius: 10px;" /></a></div>
+				   <div class="slide"><a href="MTC%20Course%20Selection.html">
+				<img src="download%20(5).jfif" alt="Image 2" class="auto-style1" style="border-radius: 10px; width: 100%; height: 250px; object-fit: cover;" /></a></div>
+            <div class="slide"><a href="CRE%20Course%20Selection.html">
+				<img src="download%20(8).jfif" alt="Image 5" style="width: 100%; /* Ensure the image fills its container */ height: 250px; /* Fixed height for all images */ object-fit: cover; /* Ensures the image covers the area without distortion */ border-radius: 10px;" /></a></div>
+            <div class="slide"><a href="IRE%20Course%20Selection.html">
+				<img src="download%20(9).jfif" alt="Image 6" style="width: 100%; /* Ensure the image fills its container */ height: 250px; /* Fixed height for all images */ object-fit: cover; /* Ensures the image covers the area without distortion */ border-radius: 10px;" /></a></div>
+            <div class="slide"><a href="ENT%20Course%20Selection.html">
+				<img src="download%20(10).jfif" alt="Image 7" style="width: 100%; /* Ensure the image fills its container */ height: 250px; /* Fixed height for all images */ object-fit: cover; /* Ensures the image covers the area without distortion */ border-radius: 10px;" /></a></div>
+            <div class="slide"><a href="ART%20Course%20Selection.html">
+				<img src="download%20(11).jfif" alt="Image 8" style="width: 100%; /* Ensure the image fills its container */ height: 250px; /* Fixed height for all images */ object-fit: cover; /* Ensures the image covers the area without distortion */ border-radius: 10px;" /></a></div>
+            <div class="slide"><a href="LUGANDA%20Course%20Selection.html">
+				<img src="download%20(12).jfif" alt="Image 9" style="width: 100%; /* Ensure the image fills its container */ height: 250px; /* Fixed height for all images */ object-fit: cover; /* Ensures the image covers the area without distortion */ border-radius: 10px;" /></a></div>
+            <div class="slide"><a href="LIT%20Course%20Selection.html">
+				<img src="download%20(14).jfif" alt="Image 10" style="width: 100%; /* Ensure the image fills its container */ height: 250px; /* Fixed height for all images */ object-fit: cover; /* Ensures the image covers the area without distortion */ border-radius: 10px;" /></a></div>
+            <div class="slide"><a href="MUSIC%20Course%20Selection.html">
+				<img src="download%20(15).jfif" alt="Image 11" style="width: 100%; /* Ensure the image fills its container */ height: 250px; /* Fixed height for all images */ object-fit: cover; /* Ensures the image covers the area without distortion */ border-radius: 10px;" /></a></div>
+          
+        
+            <div class="slide"><a href="ICT%20Course%20Selection.html">
+				<img src="images%20(6).jfif" alt="Image 14" style="width: 100%; /* Ensure the image fills its container */ height: 250px; /* Fixed height for all images */ object-fit: cover; /* Ensures the image covers the area without distortion */ border-radius: 10px;" /></a></div>
+            <div class="slide"><a href="LUGANDA%20Course%20Selection.html">
+				<img src="images%20(8).jfif" alt="Image 15" style="width: 100%; /* Ensure the image fills its container */ height: 250px; /* Fixed height for all images */ object-fit: cover; /* Ensures the image covers the area without distortion */ border-radius: 10px;" /></a></div>
+        </div>
+
+        <!-- Navigation arrows -->
+        <button class="arrow prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="arrow next" onclick="moveSlide(1)">&#10095;</button>
+    </div1>
+
+    </p>
+
+</body>
+</html>
