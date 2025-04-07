@@ -1,0 +1,1000 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html lang="en">
+  <html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>HOME PAGE</title>
+<style type="text/css">
+.auto-style2 {
+	color: #00FF00;
+	text-align: center;
+	font-family: "Bodoni MT Black";
+	background-color: #137D7D;
+}
+.auto-style7 {
+	background-color: #008080;
+	text-align: left;
+}
+a:active {
+	color: #00FF00;
+}
+.auto-style21 {
+	text-align: center;
+}
+.auto-style22 {
+	color: #FFFF00;
+	font-family: "Cooper Black";
+	font-size: x-large;
+	background-color: #C3DAEE;
+}
+ /* Animations and Transitions */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    .slide-up {
+      position: relative;
+      animation: slideUp 1.5s ease-out forwards;
+      opacity: 0;
+    }
+
+    .zoom-in {
+      transform: scale(0.5);
+      animation: zoomIn 1s forwards;
+      opacity: 0;
+    }
+
+    .color-change {
+      transition: color 0.3s ease;
+    }
+
+    .color-change:hover {
+      color: #ff6347;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+/* Fade In/Out Transition */
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+/* Scale (Zoom In/Out) Transition */
+.scale {
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.scale.show {
+  transform: scale(1);
+}
+
+/* Slide Up/Down Transition */
+.slide-up {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-up.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-down {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-down.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Color Change Transition */
+.color-change {
+  background-color: #3498db;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.color-change:hover {
+  background-color: #e74c3c;
+}
+
+/* Rotate Transition */
+.rotate {
+  transform: rotate(0deg);
+  transition: transform 1s ease-in-out;
+}
+
+.rotate:hover {
+  transform: rotate(360deg);
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+/* Slide In From Left Animation */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Color Fade Animation */
+@keyframes colorFade {
+  0% {
+    background-color: #3498db;
+  }
+  50% {
+    background-color: #e74c3c;
+  }
+  100% {
+    background-color: #3498db;
+  }
+}
+
+.color-fade {
+  animation: colorFade 5s infinite;
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-animation {
+  animation: rotate 2s infinite linear;
+}
+
+/* Hover Effects Combined with Transition */
+.hover-effect {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-effect:hover {
+  background-color: #e74c3c;
+  transform: scale(1.1);
+}
+
+@keyframes hover-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hover-effect:hover {
+  animation: hover-pulse 1s infinite;
+}
+
+/* Multiple Transitions Together */
+.multi-transition {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  transition: width 0.5s ease, height 0.5s ease, background-color 0.5s ease;
+}
+
+.multi-transition:hover {
+  width: 250px;
+  height: 250px;
+  background-color: #e74c3c;
+}
+
+/* Fade In/Out Transition */
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+/* Scale (Zoom In/Out) Transition */
+.scale {
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.scale.show {
+  transform: scale(1);
+}
+
+/* Slide Up/Down Transition */
+.slide-up {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-up.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-down {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-down.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Color Change Transition */
+.color-change {
+  background-color: #3498db;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.color-change:hover {
+  background-color: #e74c3c;
+}
+
+/* Rotate Transition */
+.rotate {
+  transform: rotate(0deg);
+  transition: transform 1s ease-in-out;
+}
+
+.rotate:hover {
+  transform: rotate(360deg);
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+/* Slide In From Left Animation */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Color Fade Animation */
+@keyframes colorFade {
+  0% {
+    background-color: #3498db;
+  }
+  50% {
+    background-color: #e74c3c;
+  }
+  100% {
+    background-color: #3498db;
+  }
+}
+
+.color-fade {
+  animation: colorFade 5s infinite;
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-animation {
+  animation: rotate 2s infinite linear;
+}
+
+/* Hover Effects Combined with Transition */
+.hover-effect {
+  background-color:#179090;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-effect:hover {
+  background-color:#00FFFF;
+  transform: scale(1.1);
+}
+
+@keyframes hover-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hover-effect:hover {
+  animation: hover-pulse 1s infinite;
+}
+
+/* Multiple Transitions Together */
+.multi-transition {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  transition: width 0.5s ease, height 0.5s ease, background-color 0.5s ease;
+}
+
+.multi-transition:hover {
+  width: 250px;
+  height: 250px;
+  background-color: #e74c3c;
+}
+/* Hover Effects Combined with Transition */
+.hover-effect3 {
+  background-color:#f0f8ff;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-effect3:hover {
+  background-color:#f0f8ff;
+  transform: scale(1.2);
+}
+
+
+.auto-style23 {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+
+.auto-style24 {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.auto-style25 {
+	animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	text-align: center;
+}
+
+
+.auto-style19 {
+	border-style: none;
+	border-width: medium;
+	text-align: center;
+}
+
+ 
+/* Styles for Footer */
+#footer p {
+	color: #fff;
+	font-size: medium;
+	margin-top: 2px;
+	margin-bottom: 6px;
+}
+#footer a {
+	color: #fff;
+	text-decoration: underline;
+}
+#footer a:hover {
+	color: #000;
+	text-decoration: none;
+
+ 
+}
+.auto-style28 {
+	background-color: #7B9292;
+	text-align: center;
+	color: #A2DEDE;
+}
+.auto-style29 {
+	text-decoration: underline;
+}
+     .container {
+            padding: 0px;
+            border-radius: 0px;
+            text-align: center;
+            width:100%;
+           
+        }
+
+ 
+.auto-style39 {
+	font-size: x-small;
+	border-width: 0px;
+	background-color: #137D7D;
+	margin-top: 0px;
+	color: #FFFFFF;
+}
+
+    
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+  /* Styling the button */
+        #noticeButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Styling the message */
+        #noticeMessage {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f8d7da;
+            color: #721c24;
+            border-radius: 5px;
+            border: 1px solid #f5c6cb;
+            display: none; /* Initially hidden */
+        }
+
+    
+  .auto-style31 {
+	text-align: center;
+	color: #000000;
+	font-size: large;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.auto-style32 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.auto-style30 {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.auto-style47 {
+	font-size: large;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container1 {
+          content-adjustment:center;
+          width:100%;
+           align-items: center;
+            justify-content: center;
+
+	
+}
+.container2 {
+          content-adjustment:center;
+          width:60%;
+	 align-items: center;
+	  justify-content: center;
+
+}
+
+
+#container-2 {
+    padding: 30px;
+    
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    font-family: Arial, sans-serif;
+   
+}
+ 
+        .auto-style54 {
+	text-align: center;
+	background-color: #DBEEEE;
+}
+
+
+#container-3 {
+    padding: 30px;
+    
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin:auto;
+    width: 80%;
+    font-family: Arial, sans-serif;
+   
+}
+ 
+        .auto-style55 {
+	background-color: #FFFFFF;
+	text-align: left;
+}
+.auto-style56 {
+	color: #000080;
+	font-size: large;
+	text-decoration: underline;
+}
+
+
+#container-4 {
+    padding: 30px;
+    
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    font-family: Arial, sans-serif;
+   
+}
+ 
+        
+#container-4 {
+    padding: 30px;
+    
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    font-family: Arial, sans-serif;
+   
+}
+
+
+
+  /* Container for the images */
+        .slider-container {
+            position: relative;
+            width: 80%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        /* The slider, which holds all the images */
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        /* Each individual image container */
+        .slide {
+            min-width: 25%; /* 4 images visible at a time */
+            box-sizing: border-box;
+            padding: 5px;
+            display: flex;
+            justify-content: center; /* Center images within each slide */
+            align-items: center;
+        }
+
+        .slide img {
+            width: 100%; /* Ensure the image fills its container */
+            height: 250px; /* Fixed height for all images */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border-radius: 10px;
+        }
+
+        /* Arrows for navigation */
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 30px;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .arrow:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Styling for the heading */
+        
+.hover-effect3:hover {
+  transform: scale(1.1);
+  border-radius: 10px;
+
+}
+
+
+ 
+ 
+        .auto-style57 {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FEA508;
+	text-decoration: underline;
+	background-color: #A2DEDE;
+}
+
+
+ 
+ 
+        </style>
+	</head>
+
+<body style="margin: 0; background-color: #f0f8ff; height: 186px; "  
+<header>
+		<table style="width: 100%; height: 112px" class="auto-style7">
+			<tr>
+				<td style="width: 81px">
+				<img alt="" height="73" src="logo.png" width="95" /></td>
+				<td>
+<h1 class="auto-style2">ATLAS HIGH SCHOOL E-LEARNING </h1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="height: 26px">
+		<table align="center" class="auto-style39" style="width: 100%" cellpadding="0" cellspacing="0">
+			<tr>
+				<td class="auto-style19" style="width: 16%">
+				<a href="HOME%20PAGE.html"><span class="hover-effect" class="auto-style20">HOME 
+				</span></a></td>
+				<td class="auto-style19" style="width: 16%">
+				<a href="PURPOSE.html"><span  class="hover-effect" class="auto-style20">PURPOSE</span></a></td>
+				<td class="auto-style19" style="width: 20%"><a href="STAKE%20HOLDERS.html">
+				<span  class="hover-effect" class="auto-style20">STAKE 
+				HOLDERS</span></a></td>
+				<td class="auto-style19" style="width: 16%">
+				<a href="CANDIDATE%20RESULTS.html">
+				<span  class="hover-effect" class="auto-style20">&nbsp;RESULTS</span></a></td>
+				<td class="auto-style19" style="width: 16%">
+				<a href="E-LEARNING.html"><span class="hover-effect" class="auto-style27">E-LEARNING</span></a></td>
+			</tr>
+		</table></td>
+			</tr>
+		</table>
+
+</header>
+<p class="auto-style21">
+&nbsp;</h><marquee class="auto-style22" >WELCOME TO SCHOOL E-LEARNING PLATFORM</marquee></p>
+<p class="auto-style21">
+<span class="auto-style23">ATLAS HIGH SCHOOL GAYAZA,</span><br class="auto-style23">
+<span class="auto-style23">P.O.Box 16281,</span><br class="auto-style23">
+<span class="auto-style23">WANDEGEYA.</span></p>
+	<p class="auto-style21">
+	&nbsp;</p>
+</div>
+<p class="auto-style21">
+<img class="hover-effect3" class="slide-up" style="animation-delay: 0.3s; left: 0px; top: 0px;"  alt="" height="467" src="WrKizyK9V9kuYhrlu9KnRlwiB2JoTdULP1hIwE7N.jpg" width="960" /></p>
+<p class="auto-style24">This platform is for online learning of Atlas High 
+School Gayaza</p>
+		<p class="auto-style24">&nbsp;</p>
+		
+		
+		<p class="auto-style24">&nbsp;</p>
+			<div   class="container1"class style="background-image:url('dfa695_5e5eb8115033401192455d104998d130~mv2.jpg'); height: 512px;">
+				<p>.</p>
+				<div  id="container-3"  class="auto-style55"  style="height: 406px; width: 80%;">
+	<p class="auto-style54" style="height: 29px">
+</section>
+	<span class="auto-style56"><strong>PURPOSE</strong></span><br />
+	</p>
+<p class="auto-style31">To enable learners to access all necessary academic 
+information for referrence and easy understanding.</p>
+<p class="auto-style31">To enable learners to access the academic information 
+and guides at any time whether at school or at home for more research and easy 
+undrstanding.</p>
+<p class="auto-style31">To enable&nbsp; teachers to provide to their students 
+learning guides.</p>
+<p class="auto-style31">To keep students academically busy and active whether at 
+school or at home.</p>
+<p class="auto-style31">To enable learners access activities for practicies and 
+preparation for UNEB.</p>
+<p class="auto-style21"><![if !supportLists]>
+<span style="mso-bidi-font-size:
+13.5pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:black"><span style="mso-list:Ignore">
+<span style="font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;" class="auto-style32">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>
+<span style="mso-fareast-font-family:&quot;Times New Roman&quot;;" class="auto-style30">To provide 
+quality education to a wide cross section of parents.</span></p>
+<p class="auto-style21"><![if !supportLists]>
+<span style="font-size:10.0pt;mso-bidi-font-size:
+13.5pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:black"><span style="mso-list:Ignore">
+<span style="font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;" class="auto-style47">&nbsp;&nbsp;
+</span></span></span><![endif]>
+<span style="mso-fareast-font-family:&quot;Times New Roman&quot;;color:black" class="auto-style47">
+Attain a high level of performance at both ‘o’ and ‘a’ Levels of education.<o:p></o:p></span></p>
+				</div>
+		</div>
+		
+		
+		<p></p>
+		
+
+		
+		<p class="auto-style24">&nbsp;</p>
+		<p class="auto-style57"><strong>CLICK </strong></p>
+		
+		<div class="slider-container" style="left: 0px; top: 0px">
+        <!-- Slider that holds all the images -->
+        <div class="slider" id="slider">
+            <div class="slide"><a href="HOME PAGE.html">
+				<img src="download (19).png" alt="Image 1" class="hover-effect3" class="auto-style72" height="247" /></a></div>
+         
+				  <div class="slide"><a href="E-LEARNING.html">
+				<img src="download (17).png" alt="Image 12" class="hover-effect3"class="auto-style72" /></a></div>
+            <div class="slide"><a href="STAKE HOLDERS.html">
+				<img src="download (18).png" alt="Image 4"class="hover-effect3" class="auto-style72" /></a></div>
+				    <div class="slide"><a href="CANDIDATE RESULTS.html">
+				<img src="download (20).png" alt="Image 13" class="hover-effect3"class="auto-style72" /></a></div>
+				<div class="slide"><a href="HOME PAGE.html">
+				<img src="download (19).png" alt="Image 1" class="hover-effect3" class="auto-style72" /></a></div>
+         
+				  <div class="slide"><a href="E-LEARNING.html">
+				<img src="download (17).png" alt="Image 12" class="hover-effect3"class="auto-style72" /></a></div>
+            <div class="slide"><a href="STAKE HOLDERS.html">
+				<img src="download (18).png" alt="Image 4"class="hover-effect3" class="auto-style72" /></a></div>
+				    <div class="slide"><a href="CANDIDATE RESULTS.html">
+				<img src="download (20).png" alt="Image 13" class="hover-effect3"class="auto-style72" /></a></div>
+				
+
+        </div>
+
+        <!-- Navigation arrows -->
+        <button class="arrow prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="arrow next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        // Function to move to the next or previous slide
+        function moveSlide(step) {
+            currentIndex += step;
+
+            // If we go past the last image, loop back to the first
+            if (currentIndex >= totalSlides) {
+                currentIndex = 0;
+            } else if (currentIndex < 0) {
+                currentIndex = totalSlides - 1;
+            }
+
+            updateSliderPosition();
+        }
+
+        // Update the slider position by translating it horizontally
+        function updateSliderPosition() {
+            const slider = document.getElementById('slider');
+            const offset = -(currentIndex * 25); // 25% for each slide (4 images visible at a time)
+            slider.style.transform = `translateX(${offset}%)`;
+        }
+
+        // Auto-slide every 3 seconds
+        setInterval(() => {
+            moveSlide(1);
+        }, 3000);
+    </script>
+
+		
+		<p class="auto-style24">&nbsp;</p>
+    <p class="auto-style25" class="auto-style21">Atlas High School main website: <a href="https://www.atlashighschool.com/" target="_blank">https://www.atlashighschool.com/</a></p>
+
+    <p class="auto-style21">Atlas High School email<img alt="" height="16" src="download%20(3).png" width="21" />: <a href="atlashigh@yahoo.com">atlashigh@yahoo.com</a></p>
+    <p class="auto-style21">School contact<img alt="" height="18" src="download%20(4).png" width="21" />: <a href="tel:0704 499557"> 0704 499557</a></p>
+
+    <p class="auto-style21">Location<img alt="" height="13" src="download%20(2).jfif" width="26" />: <a href="https://maps.app.goo.gl/sk59dZ5rjCYWzEQn8" target="_blank">Click here to view on Google Maps</a></p>
+		<p class="auto-style21">   <button id="noticeButton">help</button>
+
+    <div id="noticeMessage">
+        <p>Keep on scrolling and clicking .Every thing easy. 
+        for any issue call for help from any one experienced.
+For learning online on this platform, click on e-learning and click on any subject of your choice.
+O-level work and sample questions will appear first and past UNEB and for A level click A-level up.
+ 
+Keep scrolling as you can read through the work, sample questions and sample activities.
+U can even download and save or even print out to read offline.
+
+To view work, simply click on the book title. 
+To download simply open the work and in the up, right corner click on the arrow facing down to download.
+</p>
+    </div>
+
+    <script>
+        // Get the button and the message
+        var button = document.getElementById("noticeButton");
+        var notice = document.getElementById("noticeMessage");
+
+        // Add event listener to the button
+        button.addEventListener("click", function() {
+            // Toggle the visibility of the notice message
+            if (notice.style.display === "none") {
+                notice.style.display = "block";
+            } else {
+                notice.style.display = "none";
+            }
+        });
+    </script>
+
+		</p>
+<div id="footer">
+		<p class="auto-style28" style="height: 139px">
+		<a href="HOME%20PAGE.html"><br />
+		Home</a> | 
+		<a href="PURPOSE.html">Purpose</a> 
+		| <a href="GUIDE.html">G<span class="auto-style29">uide</span></a> |
+		<a href="STAKE%20HOLDERS.html">
+		<span class="auto-style29">Stake holders</span></a>|&nbsp;
+		<a href="E-LEARNING.html">E<span class="auto-style29">-learning</span></a> 
+		|<a href="chat%20with%20us.html">chat with us</a> |
+		<a href="kalemamicheal076@gmail.com">
+		send feedback</a> 
+		|<a placeholder="good"></a><br />
+		<br />
+		</a>Copyright ©ATLAS HIGH SCHOOL. All Rights Reserved<br />
+		<br />
+		Designed by Kalema Micheal, email: <a href="kalemamicheal076@gmail.com">
+		k<span class="auto-style29">alemamicheal076@gmail.com</span></a> contact: <a href="tel:0760700636"> 0760700636</a></p>
+		</div>
+
+</body>
+
+</html>
