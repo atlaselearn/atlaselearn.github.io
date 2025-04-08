@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>E-LEARNING</title>
+
 <style type="text/css">
 .auto-style7 {
 	background-color: #008080;
@@ -876,63 +877,65 @@ textarea.form-input {
 }
 
 
-    /* Container for the images */
-        .slider-container {
-            position: relative;
-            width: 80%;
-            overflow: hidden;
-            margin: 0 auto;
-        }
+  
+  
+  
+     * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .slider-container {
+      position: relative;
+      width: 90%;
+      max-width:90%;
+      margin: 50px auto;
+      overflow: hidden;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+    .slider {
+      display: flex;
+      transition: transform 0.3s ease;
+    }
+    .slide {
+      min-width: 25%; /* Display 4 images at a time */
+    }
+    .slide img {
+      width: 100%;
+      border-radius: 10px;
+      padding:2%;
+    }
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 50%;
+    }
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
+    }
 
-        /* The slider, which holds all the images */
-        .slider {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-
-        /* Each individual image container */
-        .slide {
-            min-width: 25%; /* 4 images visible at a time */
-            box-sizing: border-box;
-            padding: 5px;
-            display: flex;
-            justify-content: center; /* Center images within each slide */
-            align-items: center;
-        }
-
-        .slide img {
-            width: 100%; /* Ensure the image fills its container */
-            height: 250px; /* Fixed height for all images */
-            object-fit: cover; /* Ensures the image covers the area without distortion */
-            border-radius: 10px;
-        }
-
-        /* Arrows for navigation */
-        .arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            font-size: 30px;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 10;
-        }
-
-        .prev {
-            left: 10px;
-        }
-
-        .next {
-            right: 10px;
-        }
-
-        .arrow:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
+  
+  
+  
+  
+  
+  
+  
         /* Styling for the heading */
         .auto-style71 {
 	color: #00FF00;
@@ -959,12 +962,12 @@ textarea.form-input {
  style="margin: 0; background-color:#f0f8ff;"
  >
 
-		<table style="width: 100%; height: 133px" class="auto-style7">
+		<table style="width: 100%; height: 132px" class="auto-style7">
 			<tr>
-				<td style="width: 81px">
-				<img alt="" height="73" src="logo.png" width="95" /></td>
-				<td>
-<h1 class="auto-style71" >ATLAS HIGH SCHOOL E-LEARNING </h1>
+				<td style="width: 10%">
+				<img alt="" style="height:auto" src="logo.png" width="81" /></td>
+				<td style="width: 90%">
+<h1 class="auto-style71" style="font-size:3.5vw" >ATLAS HIGH SCHOOL E-LEARNING </h1>
 				</td>
 			</tr>
 			<tr>
@@ -972,17 +975,17 @@ textarea.form-input {
 		<table align="center" class="auto-style39" style="width: 100%" cellpadding="0" cellspacing="0">
 			<tr>
 				<td class="auto-style19" style="width: 16%">
-				<a href="index.html"><span class="hover-effect" class="auto-style20">HOME 
+				<a href="index.html"><span class="hover-effect" class="auto-style20" style="font-size:1.5vw">HOME 
 				</span></a></td>
 				<td class="auto-style19" style="width: 16%">
-				<a href="PURPOSE.html"><span  class="hover-effect" class="auto-style20">PURPOSE</span></a></td>
+				<a href="PURPOSE.html"><span  class="hover-effect" class="auto-style20"style="font-size:1.5vw">PURPOSE</span></a></td>
 				<td class="auto-style19" style="width: 20%"><a href="STAKE%20HOLDERS.html">
-				<span  class="hover-effect" class="auto-style20">STAKEHOLDERS</span></a></td>
+				<span  class="hover-effect" class="auto-style20"style="font-size:1.5vw">STAKEHOLDERS</span></a></td>
 				<td class="auto-style19" style="width: 16%">
 				<a href="CANDIDATE%20RESULTS.html">
-				<span  class="hover-effect" class="auto-style20">&nbsp;RESULTS</span></a></td>
+				<span  class="hover-effect" class="auto-style20"style="font-size:1.5vw">&nbsp;RESULTS</span></a></td>
 				<td class="auto-style19" style="width: 16%">
-				<a href="E-LEARNING.html"><span class="hover-effect" class="auto-style27">E-LEARNING</span></a></td>
+				<a href="E-LEARNING.html"><span class="hover-effect" class="auto-style27"style="font-size:1.5vw">E-LEARNING</span></a></td>
 			</tr>
 		</table></td>
 			</tr>
@@ -990,26 +993,26 @@ textarea.form-input {
 				<td style="height: 25px"  class="auto-style68">
 				<table cellpadding="2" cellspacing="4" style="width: 100%; height: 25px;" class="auto-style69">
 					<tr>
-						<td class="auto-style70">updates</td>
+						<td class="auto-style70"style="font-size:2vw">updates</td>
 					</tr>
 				</table>
 				</td>
-				<td style="height: 25px"  class="auto-style69">
+				<td style="height: 25px"  class="auto-style69"style="font-size:2vw">
 				
 				<marquee>Holiday is about, we are going to add holiday work endavor to check.</marquee></td>
 			
 		
 			</tr>
 		</table>
-<h1 class="auto-style22">ATLAS HIGH SCHOOL&nbsp; E-LEARNING PLATFORM</h1>
-<p class="auto-style67"> <strong>E-LEARNING PLATFORM</strong></p>
+<h1 class="auto-style40"style="font-size:3vw">ATLAS HIGH SCHOOL E-LEARNING PLATFORM</h1>
+<p class="auto-style67"style="font-size:2vw"> <strong>E-LEARNING PLATFORM</strong></p>
 <p class="auto-style22">
-<img class="zoom-in" style="animation-delay: 0.3s;" alt="" height="168" src="images%20(2).jfif" width="300" />&nbsp;</p>
+<img class="zoom-in" style="animation-delay: 0.3s;" alt="" height="auto" src="images%20(2).jfif" width="300" style="height:auto" /></p>
 <p class="auto-style32" class="auto-style33">For Holiday activities click below</p>
 <p class="auto-style33"><span class="hover-effect"><a href="HOLIDAY.html">
 <span class="auto-style41">Holiday activies</span></a></span></p>
 <p> <div class="anthem-container">
-        <h1 class="auto-style40">E-LEARNING</h1>
+        <h1 class="auto-style40"style="font-size:2.5vw">E-LEARNING</h1>
         <div class="auto-style38" id="lyrics"></div>
     </div>
 
@@ -1076,10 +1079,15 @@ To download simply open the work and in the up, right corner click on the arrow 
     </script>
 <p class="auto-style38">&nbsp;</p>
 
-<div class="slider-container" style="left: 0px; top: 0px">
-        <!-- Slider that holds all the images -->
-        <div class="slider" id="slider">
-            <div class="slide"><a href="CHE%20Course%20Selection.html">
+
+
+
+
+
+   <div class="slider-container">
+  <div class="slider" id="slider">
+   
+         <div class="slide"><a href="CHE%20Course%20Selection.html">
 				<img src="download%20(4).jfif" alt="Image 1" class="hover-effect3" class="auto-style72" /></a></div>
          
 				  <div class="slide"><a href="biology_course_selection.html">
@@ -1106,51 +1114,95 @@ To download simply open the work and in the up, right corner click on the arrow 
 				<img src="download%20(14).jfif" alt="Image 10"class="hover-effect3" class="auto-style72" /></a></div>
             <div class="slide"><a href="MUSIC%20Course%20Selection.html">
 				<img src="download%20(15).jfif" alt="Image 11" class="hover-effect3"class="auto-style72" /></a></div>
-          
+
+    
+    
+  </div>
+  <button class="prev" id="prev">&#10094;</button>
+  <button class="next" id="next">&#10095;</button>
+</div>
+
+<script>
+  const slider = document.getElementById('slider');
+  const slides = document.querySelectorAll('.slide');
+  const totalSlides = slides.length;
+  let currentIndex = 0;
+
+  function updateSliderPosition() {
+    const offset = -currentIndex * 25; // Adjusted for 4 images
+    slider.style.transform = `translateX(${offset}%)`;
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSliderPosition();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateSliderPosition();
+  }
+
+  // Automatic scrolling
+  setInterval(nextSlide, 3000); // Change slide every 3 seconds
+
+  // Touch events
+  let startX;
+  let isDragging = false;
+
+  slider.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.pageX;
+  });
+
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    const moveX = e.pageX - startX;
+    if (Math.abs(moveX) > 50) {
+      isDragging = false;
+      if (moveX > 0) {
+        prevSlide();
+      } else {
+        nextSlide();
+      }
+    }
+  });
+
+  slider.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
+
+  slider.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    startX = e.touches[0].pageX;
+  });
+
+  slider.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    const moveX = e.touches[0].pageX - startX;
+    if (Math.abs(moveX) > 50) {
+      isDragging = false;
+      if (moveX > 0) {
+        prevSlide();
+      } else {
+        nextSlide();
+      }
+    }
+  });
+
+  slider.addEventListener('touchend', () => {
+    isDragging = false;
+  });
+
+  // Initialize slider position
+  updateSliderPosition();
+</script>
+
+
+      
         
-            <div class="slide"><a href="ICT%20Course%20Selection.html">
-				<img src="images%20(6).jfif" alt="Image 14"class="hover-effect3" class="auto-style72" /></a></div>
-            <div class="slide"><a href="LUGANDA%20Course%20Selection.html">
-				<img src="images%20(8).jfif" alt="Image 15" class="hover-effect3"class="auto-style72" /></a></div>
-        </div>
-
-        <!-- Navigation arrows -->
-        <button class="arrow prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="arrow next" onclick="moveSlide(1)">&#10095;</button>
-    </div>
-
-    <script>
-        let currentIndex = 0;
-        const slides = document.querySelectorAll('.slide');
-        const totalSlides = slides.length;
-
-        // Function to move to the next or previous slide
-        function moveSlide(step) {
-            currentIndex += step;
-
-            // If we go past the last image, loop back to the first
-            if (currentIndex >= totalSlides) {
-                currentIndex = 0;
-            } else if (currentIndex < 0) {
-                currentIndex = totalSlides - 1;
-            }
-
-            updateSliderPosition();
-        }
-
-        // Update the slider position by translating it horizontally
-        function updateSliderPosition() {
-            const slider = document.getElementById('slider');
-            const offset = -(currentIndex * 25); // 25% for each slide (4 images visible at a time)
-            slider.style.transform = `translateX(${offset}%)`;
-        }
-
-        // Auto-slide every 3 seconds
-        setInterval(() => {
-            moveSlide(1);
-        }, 3000);
-    </script>
-
+        
+    
 
 
 
@@ -1252,8 +1304,8 @@ submit here</a></span></span><p class="auto-style62">
 &nbsp;<p>	
 
 	
-&nbsp;<p class="auto-style55"><span class="auto-style56"><strong>CHAT WITH US OR</strong></span>
-<span class="auto-style56"><strong>MAKE YOUR SUGGESTIONS</strong></span></p>
+&nbsp;<p class="auto-style55"><span class="auto-style56"style="font-size:2.5vw"><strong>CHAT WITH US OR</strong></span>
+<span class="auto-style56"style="font-size:2.5vw"><strong>MAKE YOUR SUGGESTIONS</strong></span></p>
 <p class="auto-style38">Chat or make your suggestions here such that we make 
 adjustments for u.</p>
 <form
@@ -1262,9 +1314,9 @@ adjustments for u.</p>
 
        
 
-	<section id="suggestion-section">
+	<section id="suggestion-section"style="font-size:2vw">
     <h2>Message or make Suggestion here</h2>
-    <form method="post" action="--WEBBOT-SELF--" class="suggestion-form">
+    <form method="post" action="--WEBBOT-SELF--" class="suggestion-form"style="font-size:1.8vw">
         <!--webbot B-Email-Label-Fields="TRUE" bot="SaveResults" S-Builtin-Fields="REMOTE_NAME REMOTE_USER HTTP_USER_AGENT Date Time" S-Date-Format="%A, %d %B %Y" S-Email-Address="kalemamike076@gmail.com" S-Email-Format="TEXT/PRE" S-Time-Format="%H:%M:%S" -->
         <div class="form-group">
             <label for="sir-name-suggestion">Name</label>
@@ -1276,23 +1328,23 @@ adjustments for u.</p>
             <label>Status</label>
             <div class="status-options">
                 <label>
-                    <input type="radio" name="status" value="student"> 
+                    <input type="radio" name="status" value="student"style="font-size:1.5vw"> 
                 </label>
                 <span class="auto-style58">
-                <label class="auto-style59">
+                <label class="auto-style59"style="font-size:1.5vw">
 				Student
                 </label>
                 </span>
                 <label>
-                    <input type="radio" name="status" value="teacher" class="auto-style59"></label><span class="auto-style58"><label class="auto-style59"> Teacher
+                    <input type="radio" name="status" value="teacher" class="auto-style59"></label><span class="auto-style58"style="font-size:1.5vw"><label class="auto-style59"style="font-size:1.5vw"> Teacher
                 </label>
                 </span>
                 <label>
-                    <input type="radio" name="status" value="administrator" class="auto-style59"></label><span class="auto-style58"><label class="auto-style59"> Administrator
+                    <input type="radio" name="status" value="administrator" class="auto-style59"></label><span class="auto-style58"><label class="auto-style59"style="font-size:1.5vw"> Administrator
                 </label>
                 </span>
                 <label>
-                    <input type="radio" name="status" value="other" class="auto-style59"></label><span class="auto-style58"><label class="auto-style59"> other
+                    <input type="radio" name="status" value="other" class="auto-style59"></label><span class="auto-style58"><label class="auto-style59"style="font-size:1.5vw"> other
                 </label>
 
             	</span>
@@ -1334,9 +1386,9 @@ adjustments for u.</p>
 <p class="auto-style57">Leave a comment</p>
 <p class="auto-style38">leave a comment here about anything in the platform</p>
 	
-	<section id="comment-section">
+	<section id="comment-section" >
     <h2>Leave a Comment</h2>
-    <form method="post" action="submit_comment.php" class="comment-form">
+    <form method="post" action="submit_comment.php" class="comment-form" >
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Name" class="form-input">
@@ -1345,11 +1397,11 @@ adjustments for u.</p>
 
         <div class="form-group">
             <label>Status</label>
-            <div class="auto-style60">
-                <label>
-                    <input type="radio" name="status" value="student"> Student
-                    <input type="radio" name="status" value="teacher" class="auto-style59"> Teacher
-                    <input type="radio" name="status" value="administrator" class="auto-style59"> Administrator
+            <div class="auto-style60" style="width: 98%">
+                <label style="font-size:1.5vw; width: 491px;">
+                    <input type="radio" name="status" value="student"style="font-size:1.5vw"> Student
+                    <input type="radio" name="status" value="teacher" class="auto-style59"style="font-size:1.5vw"> Teacher
+                    <input type="radio" name="status" value="administrator" class="auto-style59"style="font-size:1.5vw"> Administrator
                 </label>
             </div>
         </div>
