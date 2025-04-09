@@ -659,62 +659,59 @@ label {
 
 
 
-  /* Container for the images */
-        .slider-container {
-            position: relative;
-            width: 80%;
-            overflow: hidden;
-            margin: 0 auto;
-        }
+    
+      * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .slider-container {
+      position: relative;
+      width: 90%;
+      max-width:90%;
+      margin: 50px auto;
+      overflow: hidden;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+    .slider {
+      display: flex;
+      transition: transform 0.3s ease;
+    }
+    .slide {
+      min-width: 35%; /* Display 4 images at a time */
+    }
+    .slide img {
+      width: 100%;
+      border-radius: 10px;
+      padding:2%;
+    }
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 50%;
+    }
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
+    }
 
-        /* The slider, which holds all the images */
-        .slider {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-
-        /* Each individual image container */
-        .slide {
-            min-width: 25%; /* 4 images visible at a time */
-            box-sizing: border-box;
-            padding: 5px;
-            display: flex;
-            justify-content: center; /* Center images within each slide */
-            align-items: center;
-        }
-
-        .slide img {
-            width: 100%; /* Ensure the image fills its container */
-            height:auto; /* Fixed height for all images */
-            object-fit: cover; /* Ensures the image covers the area without distortion */
-            border-radius: 10px;
-        }
-
-        /* Arrows for navigation */
-        .arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            font-size: 30px;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 10;
-        }
-
-        .prev {
-            left: 10px;
-        }
-
-        .next {
-            right: 10px;
-        }
-
-        .arrow:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
+    
+    
+    
 
         /* Styling for the heading */
         
@@ -762,6 +759,20 @@ label {
 
  
  
+        .auto-style62 {
+	font-family: "Arial Rounded MT Bold";
+}
+
+
+ 
+ 
+        .auto-style63 {
+	font-size: small;
+}
+
+
+ 
+ 
         </style>
 	</head>
 
@@ -770,9 +781,9 @@ label {
 		<table style="width: 100%; height: 112px" class="auto-style7">
 			<tr>
 				<td style="width: 10vw; height: 80px;" >
-				<img alt="" style="height:auto" src="logo.png" width="100%" /></td>
+				<img  alt="" style="height:auto" src="logo.png" width="100%" /></td>
 				<td style="width: 90vw; height:80px;" >
-<h1 class="auto-style2" style="font-size:3.5vw" >ATLAS HIGH SCHOOL E-LEARNING </h1>
+<h1 class="auto-style2" style="font-size:3.5vw" ><span class="auto-style62">ATLAS HIGH SCHOOL E-LEARNING</span> </h1>
 				</td>
 			</tr>
 			<tr>
@@ -800,13 +811,13 @@ label {
 <p class="auto-style21">
 &nbsp;</h><marquee class="auto-style22" style="font-size:2.5vw">WELCOME TO SCHOOL E-LEARNING PLATFORM</marquee></p>
 <p class="auto-style21">
-<span class="auto-style23"style="font-size:2vw">ATLAS HIGH SCHOOL GAYAZA,</span><br class="auto-style23">
-<span class="auto-style23"style="font-size:2vw">P.O.Box 16281,</span><br class="auto-style23">
-<span class="auto-style23"style="font-size:2vw">WANDEGEYA.</span></p>
+<span class="auto-style23"style="font-size:1.5vw">ATLAS HIGH SCHOOL GAYAZA,</span><br class="auto-style23">
+<span class="auto-style23"style="font-size:1.5vw">P.O.Box 16281,</span><br class="auto-style23">
+<span class="auto-style23"style="font-size:1.5vw">WANDEGEYA.</span></p>
 </div>
 <p class="auto-style21">
 <img class="hover-effect3" class="slide-up" style="animation-delay: 0.3s; left: 0px; top: 0px;"  alt="" style="height:auto" src="WrKizyK9V9kuYhrlu9KnRlwiB2JoTdULP1hIwE7N.jpg" width="90%" /></p>
-<p class="auto-style24">This platform is for online learning of Atlas High 
+<p class="auto-style24" style="font-size:1.5vw">This platform is for online learning of Atlas High 
 School Gayaza</p>
 		<p style="font-size:2vw"class="auto-style60" style="margin-left:10%"style="margin-right:10%" style="font-size:2vw">
 		&nbsp;<br style="font-size:2vw"/>
@@ -830,19 +841,13 @@ quality education to a wide cross section of parents.<br />
 		<p class="auto-style24">&nbsp;</p>
 		<p class="auto-style57"><strong>CLICK </strong></p>
 		
-		<div class="slider-container" style="left: 0px; top: 0px">
-        <!-- Slider that holds all the images -->
-        <div class="slider" id="slider">
-            <div class="slide"><a href="HOME PAGE.html">
-				<img src="download (19).png" alt="Image 1" class="hover-effect3" class="auto-style72" height="247" /></a></div>
-         
-				  <div class="slide"><a href="E-LEARNING.html">
-				<img src="download (17).png" alt="Image 12" class="hover-effect3"class="auto-style72" /></a></div>
-            <div class="slide"><a href="STAKE HOLDERS.html">
-				<img src="download (18).png" alt="Image 4"class="hover-effect3" class="auto-style72" /></a></div>
-				    <div class="slide"><a href="CANDIDATE RESULTS.html">
-				<img src="download (20).png" alt="Image 13" class="hover-effect3"class="auto-style72" /></a></div>
-				<div class="slide"><a href="HOME PAGE.html">
+		
+		
+
+ <div class="slider-container">
+  <div class="slider" id="slider">
+   
+      <div class="slide"><a href="HOME PAGE.html">
 				<img src="download (19).png" alt="Image 1" class="hover-effect3" class="auto-style72" /></a></div>
          
 				  <div class="slide"><a href="E-LEARNING.html">
@@ -851,92 +856,107 @@ quality education to a wide cross section of parents.<br />
 				<img src="download (18).png" alt="Image 4"class="hover-effect3" class="auto-style72" /></a></div>
 				    <div class="slide"><a href="CANDIDATE RESULTS.html">
 				<img src="download (20).png" alt="Image 13" class="hover-effect3"class="auto-style72" /></a></div>
-				
-                 
-				  <div class="slide"><a href="E-LEARNING.html">
-				<img src="download (17).png" alt="Image 12" class="hover-effect3"class="auto-style72" /></a></div>
-            <div class="slide"><a href="STAKE HOLDERS.html">
-				<img src="download (18).png" alt="Image 4"class="hover-effect3" class="auto-style72" /></a></div>
-				    <div class="slide"><a href="CANDIDATE RESULTS.html">
-				<img src="download (20).png" alt="Image 13" class="hover-effect3"class="auto-style72" /></a></div>
-				
 
-                 
-				  <div class="slide"><a href="E-LEARNING.html">
-				<img src="download (17).png" alt="Image 12" class="hover-effect3"class="auto-style72" /></a></div>
-            <div class="slide"><a href="STAKE HOLDERS.html">
-				<img src="download (18).png" alt="Image 4"class="hover-effect3" class="auto-style72" /></a></div>
-				    <div class="slide"><a href="CANDIDATE RESULTS.html">
-				<img src="download (20).png" alt="Image 13" class="hover-effect3"class="auto-style72" /></a></div>
-				
+    
+    
+  </div>
+  <button class="prev" id="prev">&#10094;</button>
+  <button class="next" id="next">&#10095;</button>
+</div>
 
-                 
-				  <div class="slide"><a href="E-LEARNING.html">
-				<img src="download (17).png" alt="Image 12" class="hover-effect3"class="auto-style72" /></a></div>
-            <div class="slide"><a href="STAKE HOLDERS.html">
-				<img src="download (18).png" alt="Image 4"class="hover-effect3" class="auto-style72" /></a></div>
-				    <div class="slide"><a href="CANDIDATE RESULTS.html">
-				<img src="download (20).png" alt="Image 13" class="hover-effect3"class="auto-style72" /></a></div>
-				
+<script>
+  const slider = document.getElementById('slider');
+  const slides = document.querySelectorAll('.slide');
+  const totalSlides = slides.length;
+  let currentIndex = 0;
 
-                 
-				  <div class="slide"><a href="E-LEARNING.html">
-				<img src="download (17).png" alt="Image 12" class="hover-effect3"class="auto-style72" /></a></div>
-            <div class="slide"><a href="STAKE HOLDERS.html">
-				<img src="download (18).png" alt="Image 4"class="hover-effect3" class="auto-style72" /></a></div>
-				    <div class="slide"><a href="CANDIDATE RESULTS.html">
-				<img src="download (20).png" alt="Image 13" class="hover-effect3"class="auto-style72" /></a></div>
-				
+  function updateSliderPosition() {
+    const offset = -currentIndex * 35; // Adjusted for 4 images
+    slider.style.transform = `translateX(${offset}%)`;
+  }
 
-                 
-                 
-        </div>
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSliderPosition();
+  }
 
-        <!-- Navigation arrows -->
-        <button class="arrow prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="arrow next" onclick="moveSlide(1)">&#10095;</button>
-    </div>
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateSliderPosition();
+  }
 
-    <script>
-        let currentIndex = 0;
-        const slides = document.querySelectorAll('.slide');
-        const totalSlides = slides.length;
+  // Automatic scrolling
+  setInterval(nextSlide, 3000); // Change slide every 3 seconds
 
-        // Function to move to the next or previous slide
-        function moveSlide(step) {
-            currentIndex += step;
+  // Touch events
+  let startX;
+  let isDragging = false;
 
-            // If we go past the last image, loop back to the first
-            if (currentIndex >= totalSlides) {
-                currentIndex = 0;
-            } else if (currentIndex < 0) {
-                currentIndex = totalSlides - 1;
-            }
+  slider.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.pageX;
+  });
 
-            updateSliderPosition();
-        }
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    const moveX = e.pageX - startX;
+    if (Math.abs(moveX) > 50) {
+      isDragging = false;
+      if (moveX > 0) {
+        prevSlide();
+      } else {
+        nextSlide();
+      }
+    }
+  });
 
-        // Update the slider position by translating it horizontally
-        function updateSliderPosition() {
-            const slider = document.getElementById('slider');
-            const offset = -(currentIndex * 25); // 25% for each slide (4 images visible at a time)
-            slider.style.transform = `translateX(${offset}%)`;
-        }
+  slider.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
 
-        // Auto-slide every 3 seconds
-        setInterval(() => {
-            moveSlide(1);
-        }, 3000);
-    </script>
+  slider.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    startX = e.touches[0].pageX;
+  });
+
+  slider.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    const moveX = e.touches[0].pageX - startX;
+    if (Math.abs(moveX) > 50) {
+      isDragging = false;
+      if (moveX > 0) {
+        prevSlide();
+      } else {
+        nextSlide();
+      }
+    }
+  });
+
+  slider.addEventListener('touchend', () => {
+    isDragging = false;
+  });
+
+  // Initialize slider position
+  updateSliderPosition();
+</script>
+
+
+
 
 		
 		<p class="auto-style24">&nbsp;</p>
-    <p style="font-size:font-size:2vw" class="auto-style21" >Atlas High School main website: <a href="https://www.atlashighschool.com/" target="_blank">https://www.atlashighschool.com/<br />
-	</a>Atlas High School email<img alt="" height="16" src="download%20(3).png" width="21" />: <a href="atlashigh@yahoo.com">atlashigh@yahoo.com<br />
-	</a>School contact<img alt="" height="18" src="download%20(4).png" width="21" />: <a href="tel:0704 499557"> 0704 499557<br />
-	</a>Location<img alt="" height="13" src="download%20(2).jfif" width="26" />: <a href="https://maps.app.goo.gl/sk59dZ5rjCYWzEQn8" target="_blank">Click here to view on Google Maps</a></p>
+    <p style="font-size:font-size:1.5vw" class="auto-style21" style="font-size:1.5vw" >
+	<span class="auto-style63">Atlas High School main website: </span> <a href="https://www.atlashighschool.com/" target="_blank">
+	<span class="auto-style63">https://www.atlashighschool.com/</span><br />
+	</a><span class="auto-style63">Atlas High School email</span><img alt="" height="16" src="download%20(3).png" width="21" class="auto-style63" /><span class="auto-style63">: 
+	</span> <a href="atlashigh@yahoo.com"><span class="auto-style63">atlashigh@yahoo.com</span><br />
+	</a><span class="auto-style63">School contact</span><img alt="" height="18" src="download%20(4).png" width="21" class="auto-style63" /><span class="auto-style63">: 
+	</span> <a href="tel:0704 499557"> <span class="auto-style63">0704 499557</span><br />
+	</a><span class="auto-style63">Location</span><img alt="" height="13" src="download%20(2).jfif" width="26" class="auto-style63" /><span class="auto-style63">: 
+	</span> <a href="https://maps.app.goo.gl/sk59dZ5rjCYWzEQn8" target="_blank">
+	<span class="auto-style63">Click here to view on Google Maps</span></a></p>
 
-		<p class="auto-style21">   <button id="noticeButton">help</button>
+		<p class="auto-style21">   <button id="noticeButton">click for help</button>
 
     <div id="noticeMessage">
         <p>Keep on scrolling and clicking .Every thing easy. 
@@ -970,7 +990,7 @@ To download simply open the work and in the up, right corner click on the arrow 
 
 		</p>
 <div id="footer">
-		<p class="auto-style28" style="height: 139px">
+		<p style="font-size:2vw; height: 138px;"class="auto-style28" style="height: 139px">
 		<a href="HOME%20PAGE.html"><br />
 		Home</a> | 
 		<a href="PURPOSE.html">Purpose</a> 
@@ -986,7 +1006,8 @@ To download simply open the work and in the up, right corner click on the arrow 
 		</a>Copyright ©ATLAS HIGH SCHOOL. All Rights Reserved<br />
 		<br />
 		Designed by Kalema Micheal, email: <a href="kalemamicheal076@gmail.com">
-		k<span class="auto-style29">alemamicheal076@gmail.com</span></a> contact: <a href="tel:0760700636"> 0760700636</a></p>
+		k<span class="auto-style29">alemamicheal076@gmail.com</span></a> contact: <a href="tel:0760700636"> 0760700636<br />
+		</a></p>
 		</div>
 
 </body>
