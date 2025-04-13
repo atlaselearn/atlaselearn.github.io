@@ -35,14 +35,14 @@
       transition: transform 0.3s ease;
     }
     .slide {
-      min-width: 25%; /* Display 4 images at a time */
-       padding:0.5vw;
+      min-width: 35%; /* Display 3 images at a time */
+       
        height:auto
     }
     .slide img {
       width: 100%;
       border-radius: 10px;
-      padding:1vw;
+      
     }
     .prev, .next {
       position: absolute;
@@ -120,6 +120,19 @@
 	  background-color: #F6F5E0;
   }
 
+  .auto-style16 {
+	  font-size: xx-large;
+	  color: #000000;
+	  font-family: "Arial Rounded MT Bold";
+	  text-decoration: underline;
+  }
+
+  .auto-style17 {
+	  border-color: #008000;
+	  border-width: 0px;
+	  background-color: #FFFFFF;
+  }
+
   </style>
 </head>
 <body >
@@ -141,11 +154,27 @@
 
    <div class="auto-style5">
   <div class="slider" id="slider">
+  
+  
+  
+   <div class="slide">
+					  <table  style="border-radius:20px;" style="width: 80%; height: auto;" align="center" class="auto-style13" style="width: 80%; height: auto" cellspacing="8">
+						  <tr>
+							  <td  style="border-radius:20px;" class="auto-style15" style="width:80%">
+							  <span class="auto-style3" style="font-size:4vw">
+							  <br></span>
+							  <span class="auto-style16" style="font-size:4vw">
+							  Enjoy...</span><span class="auto-style3" style="font-size:4vw"><br>
+							  <br></span><br></td>
+						  </tr>
+						  </table>
+		 </div>
+
   <div class="slide">
 					  <table  style="border-radius:20px;" style="width: 80%; height: auto;" align="center" class="auto-style13" style="width: 80%; height: auto" cellspacing="8">
 						  <tr>
 							  <td  style="border-radius:20px;" class="auto-style15" style="width: 584px">
-							  <span class="auto-style3" style="font-size:4vw">
+							  <span class="auto-style16" style="font-size:4vw">
 							  SENIOR .1</span><br></td>
 						  </tr>
 						  <tr>
@@ -160,7 +189,7 @@
 					  <table  style="border-radius:20px;" style="width: 80%; height: auto;" align="center" class="auto-style13" style="width: 80%; height: auto" cellspacing="8">
 						  <tr>
 							  <td  style="border-radius:20px;" class="auto-style15" style="width: 584px">
-							  <span class="auto-style3" style="font-size:4vw">
+							  <span class="auto-style16" style="font-size:4vw">
 							  SENIOR .2</span><br></td>
 						  </tr>
 						  <tr>
@@ -171,11 +200,11 @@
 		 </div>
             
             
-              <div class="slide">
+            <div class="slide">
 					  <table  style="border-radius:20px;" style="width: 80%; height: auto;" align="center" class="auto-style13" style="width: 80%; height: auto" cellspacing="8">
 						  <tr>
 							  <td  style="border-radius:20px;" class="auto-style15" style="width: 584px">
-							  <span class="auto-style3" style="font-size:4vw">
+							  <span class="auto-style16" style="font-size:4vw">
 							  SENIOR .3</span><br></td>
 						  </tr>
 						  <tr>
@@ -191,7 +220,7 @@
 					  <table  style="border-radius:20px;" style="width: 80%; height: auto;" align="center" class="auto-style13" style="width: 80%; height: auto" cellspacing="8">
 						  <tr>
 							  <td  style="border-radius:20px;" class="auto-style15" style="width: 584px">
-							  <span class="auto-style3" style="font-size:4vw">
+							  <span class="auto-style16" style="font-size:4vw">
 							  SENIOR .4</span><br></td>
 						  </tr>
 						  <tr>
@@ -204,7 +233,7 @@
 					  <table  style="border-radius:20px;" style="width: 80%; height: auto;" align="center" class="auto-style13" style="width: 80%; height: auto" cellspacing="8">
 						  <tr>
 							  <td  style="border-radius:20px;" class="auto-style15" style="width: 584px">
-							  <span class="auto-style3" style="font-size:4vw">
+							  <span class="auto-style16" style="font-size:4vw">
 							  SENIOR .5</span><br></td>
 						  </tr>
 						  <tr>
@@ -213,11 +242,11 @@
 						  </tr>
 					  </table>
 		 </div>
- <div class="slide">
+  <div class="slide">
 					  <table  style="border-radius:20px;" style="width: 80%; height: auto;" align="center" class="auto-style13" style="width: 80%; height: auto" cellspacing="8">
 						  <tr>
 							  <td  style="border-radius:20px;" class="auto-style15" style="width: 584px">
-							  <span class="auto-style3" style="font-size:4vw">
+							  <span class="auto-style16" style="font-size:4vw">
 							  SENIOR .6</span><br></td>
 						  </tr>
 						  <tr>
@@ -243,7 +272,7 @@
   let currentIndex = 0;
 
   function updateSliderPosition() {
-    const offset = -currentIndex * 25; // Adjusted for 4 images
+    const offset = -currentIndex * 35; // Adjusted for 3 images
     slider.style.transform = `translateX(${offset}%)`;
   }
 
