@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -117,8 +117,9 @@ label {
 }
 
 .auto-style59 {
-	font-size: small;
-}
+		font-size: small;
+		font-weight: bold;
+	}
 
 textarea.form-input {
     resize: vertical;
@@ -280,6 +281,12 @@ submit.form-input {
 
 
 
+    .auto-style64 {
+		font-weight: bold;
+	}
+
+
+
     </style>
 </head>
 <body style="background-color: #D4FFFF">
@@ -292,10 +299,9 @@ submit.form-input {
 	
 		
 	
-		<section id="submit-section">
+		<section id="submit-section" style="font-size:clamp(12px, 2vw, 16px)">
     <h2>sumbmit work to be added</h2>
-    <form method="post" action="--WEBBOT-SELF--" class="comment-form">
-        <!--webbot B-Email-Label-Fields="TRUE" bot="FileUpload" S-Builtin-Fields="REMOTE_NAME REMOTE_USER HTTP_USER_AGENT Date Time" S-Date-Format="%A, %d %B %Y" S-Email-Address="kalemamike076@gmail.com" S-Email-Format="TEXT/PRE" S-Time-Format="%H:%M:%S" -->
+    <form method="post" action="https://formsubmit.co/kalemamichealug@gmail.com" class="comment-form">
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Name" class="form-input">
@@ -304,11 +310,13 @@ submit.form-input {
 
         <div class="form-group">
             <label>Status</label>
-            <div class="auto-style60">
-                <label>
-                    <input type="radio" name="status" value="student"> Student
+            <div class="auto-style60" style="width: 99%">
+                <label style="width: 100%" style="font-size:clamp(12px, 2vw, 16px)">
+                    <em>
+                    <input type="radio" name="status" value="student" class="auto-style64"> Student
                     <input type="radio" name="status" value="teacher" class="auto-style59"> Teacher
                     <input type="radio" name="status" value="administrator" class="auto-style59"> Administrator
+                </em>
                 </label>
             </div>
         </div>
