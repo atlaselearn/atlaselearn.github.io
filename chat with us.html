@@ -117,8 +117,9 @@ label {
 }
 
 .auto-style59 {
-	font-size: small;
-}
+		font-size: small;
+		font-weight: bold;
+	}
 
 textarea.form-input {
     resize: vertical;
@@ -270,6 +271,12 @@ submit.form-input {
 
 
 
+    .auto-style65 {
+		font-weight: bold;
+	}
+
+
+
     </style>
 </head>
 <body style="background-color: #D4FFFF">
@@ -291,7 +298,7 @@ submit.form-input {
 	
 		
 		
-		<section id="submit-section" class="auto-style64" style="font-size:2vw">
+		<section id="submit-section" class="auto-style64" style="font-size: clamp(12px, 2vw, 16px)">
     <h2>Chat with us here</h2>
     <form method="post" action="https://formsubmit.co/kalemamichealug@gmail.com" class="comment-form">
         <div class="form-group">
@@ -302,11 +309,13 @@ submit.form-input {
 
         <div class="form-group">
             <label>Status</label>
-            <div class="auto-style60" style="width: 99%">
-                <label style="font-size:2vw; width: 100%;">
-                    <input type="radio" name="status" value="student"> Student
+            <div class="auto-style60" style="width: 99%"  style="font-size: clamp(12px, 2vw, 16px)">
+                <label style="font-size clamp(12px, 2vw, 16px); width: 100%;">
+                    <em>
+                    <input type="radio" name="status" value="student" class="auto-style65"> Student
                     <input type="radio" name="status" value="teacher" class="auto-style59"> Teacher
                     <input type="radio" name="status" value="administrator" class="auto-style59"> Administrator
+                </em>
                 </label>
             </div>
         </div>
