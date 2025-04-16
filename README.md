@@ -1,1 +1,1 @@
-ATLAS E-LEARNING PLATFORM
+atlaselearn.github.io
