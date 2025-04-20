@@ -1,1 +1,1 @@
-atlaselearn.github.io
+atlaselearn
